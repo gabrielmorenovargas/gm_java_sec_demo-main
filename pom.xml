@@ -74,7 +74,7 @@
             <plugin>
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
-                <version>6.1.1</version>
+                <version>12.2.0</version>
                 <executions>
                     <execution>
                         <goals>
@@ -83,6 +83,7 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <nvdDatafeedUrl>http://178.63.27.74/cve/nvdcve-{0}.json.gz</nvdDatafeedUrl>
                     <failBuildOnCVSS>10</failBuildOnCVSS>
                     <!-- Generate all report formats -->
                     <format>ALL</format>
