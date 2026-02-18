@@ -13,6 +13,7 @@ RUN cd /opt/ \
  && rm -rf amazon-corretto-11-x64-linux-jdk.tar.gz \
  && wget https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz -O apache-maven-3.6.3-bin.tar.gz \
  && tar -xzf apache-maven-3.6.3-bin.tar.gz \
+ && rm -rf apache-maven-3.6.3-bin.tar.gz \
  && chown -R jenkins:jenkins amazon-corretto-11.0.30.7.1-linux-x64 \
  && chown -R jenkins:jenkins apache-maven-3.6.3
 
