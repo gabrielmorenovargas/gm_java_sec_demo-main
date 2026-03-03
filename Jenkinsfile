@@ -21,8 +21,8 @@ pipeline {
           sh 'mvn dependency-check:check'
         }
 
-dependencyCheck odcInstallation: 'default'
-dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
+owaspDependencyCheck installation: 'default'
+owaspDependencyCheckPublisher pattern: '**/dependency-check-report.xml'
       }
     }
 
