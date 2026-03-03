@@ -21,7 +21,8 @@ pipeline {
           sh 'mvn dependency-check:check'
         }
 
-        dependencyCheckPublisher pattern: 'target/dependency-check-report.xml'
+dependencyCheck odcInstallation: 'default'
+dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
       }
     }
 
